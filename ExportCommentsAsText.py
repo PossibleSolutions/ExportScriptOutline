@@ -14,7 +14,7 @@ input_dirname = os.path.dirname(input_path)
 output_path = os.path.join(input_dirname, 'ScriptComments_summary.txt')
 
 # Open input file and output text file
-with open(input_path, 'r') as input_file, open(output_path, 'w') as output_file:
+with open(input_path, 'r', encoding='utf-8') as input_file, open(output_path, 'w') as output_file:
     # If input file is a Python script
     if input_file.name.endswith('.py'):
         # Loop through each line in the Python script
